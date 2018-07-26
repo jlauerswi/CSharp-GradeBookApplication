@@ -24,13 +24,13 @@ namespace GradeBook.GradeBooks
             studentsGrades.Sort((a, b) => -1*a.CompareTo(b));
 
             int threshold = (int) Math.Ceiling(allStudents.Count * 0.2);
-            if (averageGrade > studentsGrades[threshold - 1]) {
+            if (averageGrade >= studentsGrades[threshold - 1]) {
                 return 'A';
-            } else if (averageGrade > studentsGrades[(threshold*2) - 1]) {
+            } else if (averageGrade >= studentsGrades[(threshold*2) - 1]) {
                 return 'B';
-            } else if (averageGrade > studentsGrades[(threshold*3) - 1]) {
+            } else if (averageGrade >= studentsGrades[(threshold*3) - 1]) {
                 return 'C';
-            } else if (averageGrade > studentsGrades[(threshold*4) - 1]) {
+            } else if (averageGrade >= studentsGrades[(threshold*4) - 1]) {
                 return 'D';
             }
             return 'F';
