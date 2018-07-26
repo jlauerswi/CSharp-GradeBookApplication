@@ -289,3 +289,6 @@ __pycache__/
 *.ncrunchsolution
 *.ncrunchproject
 *.gdbk
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/launch.json
